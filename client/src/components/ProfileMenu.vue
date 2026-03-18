@@ -125,17 +125,18 @@ const handleLogout = () => {
   align-items: center;
   gap: 0.625rem;
   padding: 0.5rem 0.875rem;
-  background: white;
-  border: 1px solid #e2e8f0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: inherit;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .profile-button:hover {
-  background: #f8fafc;
-  border-color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .avatar {
@@ -155,7 +156,7 @@ const handleLogout = () => {
 .profile-name {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #0f172a;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .chevron {
@@ -169,8 +170,9 @@ const handleLogout = () => {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 0.5rem);
-  right: 0;
+  bottom: calc(100% + 0.5rem);
+  top: auto;
+  left: 0;
   min-width: 280px;
   background: white;
   border: 1px solid #e2e8f0;
